@@ -46,17 +46,6 @@ export default function StressRegulator() {
     }
   }, [stressLevel])
 
-  // Get the appropriate strategies based on stress level
-  const getStrategies = () => {
-    if (stressLevel >= 1 && stressLevel <= 3) {
-      return lowStressStrategies
-    } else if (stressLevel >= 4 && stressLevel <= 6) {
-      return mediumStressStrategies
-    } else {
-      return highStressStrategies
-    }
-  }
-
   // Get color based on stress level
   const getColor = () => {
     if (stressLevel >= 1 && stressLevel <= 3) {
